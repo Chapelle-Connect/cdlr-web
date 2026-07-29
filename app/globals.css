@@ -140,7 +140,7 @@ main:focus {
 .final-mark {
   display: block;
   flex: 0 0 auto;
-  background: transparent url("/chapelle-connect-logo.webp") center / contain no-repeat;
+  background: transparent url("/favicon-transparent.png") center / contain no-repeat;
 }
 
 .brand-mark {
