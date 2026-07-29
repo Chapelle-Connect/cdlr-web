@@ -441,7 +441,7 @@ footer nav button:hover {
   border: 0.5rem solid #2c245d;
   border-radius: 2.7rem;
   transform: rotate(1.5deg);
-  background: #fff url("/mobile-home.png") center / cover no-repeat;
+  background: #fff url("/mobile-home-latest.jpg") center / cover no-repeat;
   box-shadow: 0 2.5rem 5.5rem rgba(45, 37, 80, 0.23);
   transition:
     transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -639,25 +639,25 @@ footer nav button:hover {
 .mini-phone {
   position: absolute;
   overflow: hidden;
-  border-radius: 1.4rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
   background-color: #fff;
   box-shadow: 0 1.6rem 3.5rem rgba(42, 33, 75, 0.2);
 }
 
 .mini-phone.back {
-  width: 26rem;
-  height: 31rem;
-  transform: rotate(-5deg) translateX(-4.5rem);
-  background: #f5f7fb url("/admin-event-editor.png") center / contain no-repeat;
+  width: 15.1rem;
+  height: 29.5rem;
+  transform: rotate(-6deg) translateX(-5.2rem);
+  background: #fff url("/mobile-media.jpeg") center / cover no-repeat;
 }
 
 .mini-phone.front {
-  width: 14.7rem;
-  height: 30rem;
-  transform: rotate(5deg) translateX(8.2rem);
-  border: 0.45rem solid var(--ink);
-  border-radius: 2.1rem;
-  background: #fff url("/mobile-home.png") center / cover no-repeat;
+  width: 14rem;
+  height: 30.3rem;
+  transform: rotate(6deg) translateX(6.2rem);
+  border-color: var(--ink);
+  background: #fff url("/mobile-sign-in.jpg") center / cover no-repeat;
 }
 
 .story-copy {
@@ -709,6 +709,19 @@ footer nav button:hover {
 
 .store-row b {
   font-size: 0.74rem;
+}
+
+.store-name {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.store-name svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: 0 0 auto;
+  fill: currentColor;
 }
 
 .store-row small {
@@ -1320,15 +1333,11 @@ footer nav button {
   }
 
   .mini-phone.back {
-    width: 23rem;
-    height: 27rem;
-    transform: rotate(-5deg) translateX(-3.4rem);
+    transform: rotate(-6deg) translateX(-4.5rem);
   }
 
   .mini-phone.front {
-    width: 12.8rem;
-    height: 26rem;
-    transform: rotate(5deg) translateX(6.5rem);
+    transform: rotate(6deg) translateX(5.4rem);
   }
 
   .store-row > span {
