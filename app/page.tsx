@@ -49,7 +49,7 @@ const copy = {
     announcement: "New announcement published",
     nextEvent: "Next event",
     sunday: "Sunday · 10:00 AM",
-    productPreview: "Chapelle Connect mobile app home screen",
+    productPreview: "Chapelle Connect mobile app video demonstration",
     sectionTag: "One connected platform",
     sectionTitle: "Everything your church needs.\nNothing it doesn’t.",
     sectionIntro:
@@ -123,7 +123,7 @@ const copy = {
     announcement: "Nouvelle annonce publiée",
     nextEvent: "Prochain événement",
     sunday: "Dimanche · 10 h 00",
-    productPreview: "Écran d’accueil de l’application mobile Chapelle Connect",
+    productPreview: "Démonstration vidéo de l’application mobile Chapelle Connect",
     sectionTag: "Une plateforme connectée",
     sectionTitle:
       "Tout ce dont votre église a besoin.\nRien de superflu.",
@@ -398,11 +398,22 @@ export default function Home() {
           </div>
 
           <div className="product-scene">
-            <div
-              className="phone"
-              role="img"
-              aria-label={t.productPreview as string}
-            />
+            <div className="phone">
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                poster="/mobile-sign-in.jpg"
+                aria-label={t.productPreview as string}
+              >
+                <source
+                  src="/chapelle-connect-demo.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
             <div className="float-card fc-one" aria-hidden="true">
               <span className="pulse">✓</span>
               <div>
