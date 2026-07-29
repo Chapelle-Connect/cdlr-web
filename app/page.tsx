@@ -37,6 +37,7 @@ const copy = {
     menuOpen: "Open menu",
     menuClose: "Close menu",
     switchLanguage: "Passer au français",
+    launchNotice: "The Chapelle Connect member app is coming soon",
     eyebrow: "A digital home for our church",
     titleA: "Church life,",
     titleB: "beautifully connected.",
@@ -111,6 +112,7 @@ const copy = {
     menuOpen: "Ouvrir le menu",
     menuClose: "Fermer le menu",
     switchLanguage: "Switch to English",
+    launchNotice: "L’application Chapelle Connect arrive bientôt",
     eyebrow: "Le foyer numérique de notre église",
     titleA: "La vie d’église,",
     titleB: "pleinement connectée.",
@@ -288,6 +290,10 @@ export default function Home() {
       </a>
 
       <header className="site-header">
+        <div className="launch-banner">
+          <span aria-hidden="true">✦</span>
+          <strong>{t.launchNotice as string}</strong>
+        </div>
         <div className="nav-wrap">
           <a href="#top" aria-label="Chapelle Connect home" onClick={closeMenu}>
             <Brand />

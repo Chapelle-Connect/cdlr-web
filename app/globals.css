@@ -14,6 +14,9 @@
   --radius-md: 1.15rem;
   --radius-lg: 2.25rem;
   --shadow-soft: 0 1.25rem 3rem rgba(39, 31, 79, 0.12);
+  --nav-height: 5.25rem;
+  --banner-height: 2.25rem;
+  --header-height: calc(var(--nav-height) + var(--banner-height));
 }
 
 * {
@@ -87,8 +90,30 @@ main:focus {
   backdrop-filter: blur(18px);
 }
 
+.launch-banner {
+  min-height: var(--banner-height);
+  padding: 0.45rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.launch-banner span {
+  color: var(--mint);
+}
+
+.launch-banner strong {
+  font-weight: 650;
+}
+
 .nav-wrap {
-  min-height: var(--header-height);
+  min-height: var(--nav-height);
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 0 1.75rem;
@@ -1117,7 +1142,7 @@ footer nav button {
 
 @media (max-width: 56.25rem) {
   :root {
-    --header-height: 4.75rem;
+    --nav-height: 4.75rem;
   }
 
   .nav-wrap {
