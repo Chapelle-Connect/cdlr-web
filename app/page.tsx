@@ -37,7 +37,7 @@ const copy = {
     menuOpen: "Open menu",
     menuClose: "Close menu",
     switchLanguage: "Passer au français",
-    launchNotice: "The Chapelle Connect member app is coming soon",
+    launchNotice: "The Chapelle Connect app is coming soon",
     eyebrow: "A digital home for our church",
     titleA: "Church life,",
     titleB: "beautifully connected.",
