@@ -51,8 +51,12 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: {
+      url: "/favicon-transparent.png",
+      type: "image/png",
+      sizes: "64x64",
+    },
+    shortcut: "/favicon-transparent.png",
     apple: "/chapelle-connect-logo.webp",
   },
 };
